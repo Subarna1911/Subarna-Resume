@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600&display=swap');
+
+:root{
+    --color-gray:#F5F5F5;
+    --colorTextBody:#000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Alegreya", serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--color-gray);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.header__section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:  20px;
+    position: relative;
+    /* border-bottom: 2px solid #D8DBBD; */
+}
+
+.header__section::after{
+    position: absolute;
+    content:'';
+    bottom: 0;
+    left: 20px; /* Matches the left padding */
+    width: calc(100% - 60px); /* Takes full width minus left and right padding */
+    border-bottom: 2px solid #D8D2C2;
+}
+
+.title__sec h2{
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title__sec h4{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.profile__img img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+
+.main__section{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    
+}
+/* left section main content */
+.left__sec {
+    flex: 1; 
+}
+
+.contact{
+    position: relative;
+}
+
+.contact::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    border-bottom: 2px solid #D8D2C2;
+    left: 20px; 
+    width: calc(100% - 60px); 
+}
+
+.education {
+    position: relative;
+}
+
+.education::after{
+   position: absolute;
+   content: '';
+   bottom: -5px;
+   border-bottom: 2px solid #D8D2C2;
+   left: 20px;
+   width: calc(100% - 60px); 
+}
+
+
+.contact__item{
+    list-style: none;
+    padding:5px 0;
+
+}
+
+.section-heading{
+    padding: 1rem;
+    margin-top: 16px;    
+}
+
+.section-title{
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.contact__item .contact__text{
+    padding-left: 16px;
+    font-size: 16px;
+}
+
+.contact__item .contact__icon{
+    font-size: 14px;
+}
+/* education section */
+.education__content .degree{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.edu__first{
+    margin-bottom: 10px;
+}
+
+.education .uni__name{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight:400;
+}
+
+
+/* skills section */
+
+.skills__content {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+.skills__list{
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 16px;
+    background-color: black;
+    color:white;
+    width: 45%;
+    padding:8px;
+    margin-bottom: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.skills__list:hover{
+    background-color: white;
+    color:var(--colorTextBody);
+    transition: .5s;
+    border:1px solid black;
+}
+/* right section main content */
+.right__sec {
+    flex: 2;
+}
+
+.job__role{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.company__name{
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.working-days{
+    display: flex;
+    justify-content: space-between;
+    }
+
+.working__year{
+    margin: 10px 0px;
+}
+
+.task{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.main-task{
+    list-style: circle;
+}
+
+.main-task .task-list{
+    padding: 8px 0px;
+}
+
+.project__content__title{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+.project__link{
+    text-decoration: none;
+}
+
+.certificate__details {
+    font-size: 1rem;
+    font-weight: 600;
+    list-style: circle;
+}
+
+.certificate-list{
+    padding: 5px 0;
+}
+
+
+.interest__content{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.contact__text a {
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .main__section {
+      flex-direction: column;
+    }
+
+    .profile__img {
+        text-align: center;
+        width: 100%;
+    }
+
+    .title__sec h4{
+        text-align: center;
+        font-size:14px;
+        margin: 10px;
+    }
+
+    .title__sec h2{
+        font-size: 1.5rem;
+    }
+
+  }
+
+  @media print {
+    /* Optional: Add specific styles for print or PDF */
+    body {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    #resume {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
