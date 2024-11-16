@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600&display=swap'); */
 
-:root{
+/* :root{
     --color-gray:#F5F5F5;
     --colorTextBody:#000000;
 }
@@ -28,18 +28,18 @@
     padding:  20px;
     position: relative;
     /* border-bottom: 2px solid #D8DBBD; */
-}
+/* } */
 
-.header__section::after{
+/* .header__section::after{
     position: absolute;
     content:'';
     bottom: 0;
     left: 20px; /* Matches the left padding */
-    width: calc(100% - 60px); /* Takes full width minus left and right padding */
-    border-bottom: 2px solid #D8D2C2;
-}
+    /* width: calc(100% - 60px); Takes full width minus left and right padding */
+    /* border-bottom: 2px solid #D8D2C2;
+} */
 
-.title__sec h2{
+/* .title__sec h2{
     font-size: 2rem;
     letter-spacing: 0.2em;
     text-align: center;
@@ -64,9 +64,9 @@
     justify-content: space-between;
     gap: 30px;
     
-}
+} */ 
 /* left section main content */
-.left__sec {
+/* .left__sec {
     flex: 1; 
 }
 
@@ -122,9 +122,9 @@
 
 .contact__item .contact__icon{
     font-size: 14px;
-}
+} */
 /* education section */
-.education__content .degree{
+/* .education__content .degree{
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
@@ -137,12 +137,12 @@
     font-size: 1rem;
     margin-bottom: 10px;
     font-weight:400;
-}
+} */
 
 
 /* skills section */
 
-.skills__content {
+/* .skills__content {
     list-style: none;
     display: flex;
     flex-wrap: wrap; 
@@ -168,9 +168,9 @@
     color:var(--colorTextBody);
     transition: .5s;
     border:1px solid black;
-}
+} */
 /* right section main content */
-.right__sec {
+/* .right__sec {
     flex: 2;
 }
 
@@ -235,10 +235,10 @@
 
 .contact__text a {
     text-decoration: none;
-}
+} */
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .main__section {
       flex-direction: column;
     }
@@ -258,10 +258,10 @@
         font-size: 1.5rem;
     }
 
-  }
+  } */
 
-  @media print {
-    /* Optional: Add specific styles for print or PDF */
+  /* @media print {
+   
     body {
         font-size: 12px;
     }
@@ -269,6 +269,6 @@
 
 @media (max-width: 768px) {
     #resume {
-        width: 100%; /* Full width for smaller screens */
+        width: 100%; 
     }
-}
+} */

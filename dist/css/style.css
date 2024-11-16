@@ -1,6 +1,207 @@
-body {
-  font: 100% Helvetica, sans-serif;
-  color: #333;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alegreya", serif;
+}
+
+.container {
+  color: #000000;
+  background-color: #F5F5F5;
+  width: 80%;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 30px;
+}
+.container .header__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px;
+  position: relative;
+}
+.container .header__section::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 10px;
+  width: calc(100% - 60px);
+  border-bottom: 2px solid #D8D2C2;
+}
+.container .header__section .title__sec h2 {
+  font-size: 2rem;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.container .header__section .title__sec h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.container .header__section .profile__img img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+.container .main__section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.container .main__section .section-heading {
+  padding: 16px;
+  margin-top: 5px;
+}
+.container .main__section .section-title {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.container .main__section .left__sec {
+  flex: 1;
+}
+.container .main__section .left__sec .contact,
+.container .main__section .left__sec .education {
+  position: relative;
+}
+.container .main__section .left__sec .contact::after,
+.container .main__section .left__sec .education::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  border-bottom: 2px solid #D8D2C2;
+  left: 10px;
+  width: calc(100% - 60px);
+}
+.container .main__section .left__sec .contact .contact__item,
+.container .main__section .left__sec .contact .certificate__details,
+.container .main__section .left__sec .education .contact__item,
+.container .main__section .left__sec .education .certificate__details {
+  list-style: none;
+  padding: 5px 0;
+  font-size: 1rem;
+}
+.container .main__section .left__sec .contact .contact__item .contact__text,
+.container .main__section .left__sec .contact .certificate__details .contact__text,
+.container .main__section .left__sec .education .contact__item .contact__text,
+.container .main__section .left__sec .education .certificate__details .contact__text {
+  padding-left: 10px;
+  font-size: 1rem;
+}
+.container .main__section .left__sec .contact .contact__item .contact__text a,
+.container .main__section .left__sec .contact .certificate__details .contact__text a,
+.container .main__section .left__sec .education .contact__item .contact__text a,
+.container .main__section .left__sec .education .certificate__details .contact__text a {
+  text-decoration: none;
+}
+.container .main__section .left__sec .contact .contact__item .contact__icon,
+.container .main__section .left__sec .contact .certificate__details .contact__icon,
+.container .main__section .left__sec .education .contact__item .contact__icon,
+.container .main__section .left__sec .education .certificate__details .contact__icon {
+  font-size: 14px;
+}
+.container .main__section .left__sec .interest__content,
+.container .main__section .left__sec .degree {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.container .main__section .left__sec .uni__name {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.container .main__section .left__sec .edu__first {
+  margin-bottom: 10px;
+}
+.container .main__section .right__sec {
+  flex: 2;
+}
+.container .main__section .right__sec .work-exp .job__role {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.container .main__section .right__sec .work-exp .company__name {
+  font-size: 1rem;
+  text-decoration: none;
+}
+.container .main__section .right__sec .work-exp .working-days {
+  display: flex;
+  justify-content: space-between;
+}
+.container .main__section .right__sec .work-exp .working__year {
+  margin: 10px 0;
+}
+.container .main__section .right__sec .work-exp .task {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.container .main__section .right__sec .work-exp .main-task {
+  list-style: circle;
+}
+.container .main__section .right__sec .work-exp .main-task .task-list {
+  padding: 5px 0;
+}
+.container .main__section .right__sec .project .project__content__title {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5px 0;
+}
+.container .main__section .right__sec .project .project__link {
+  text-decoration: none;
+}
+.container .main__section .right__sec .certificates .certificate__details {
+  font-size: 1rem;
+  font-weight: 600;
+  list-style: circle;
+}
+.container .main__section .right__sec .certificates .certificate-list {
+  padding: 5px 0;
+}
+.container .main__section .skills__content {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container .main__section .skills__content .skills__list {
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 16px;
+  background-color: black;
+  color: white;
+  width: 47%;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.container .main__section .skills__content .skills__list:hover {
+  background-color: white;
+  color: var(--colorTextBody);
+  transition: 0.5s;
+  border: 1px solid black;
+}
+@media (max-width: 768px) {
+  .container .main__section {
+    flex-direction: column;
+  }
+  .container .profile__img {
+    text-align: center;
+    width: 100%;
+  }
+  .container .title__sec h4 {
+    text-align: center;
+    font-size: 14px;
+    margin: 10px;
+  }
+  .container .title__sec h2 {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

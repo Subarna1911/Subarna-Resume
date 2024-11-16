@@ -1,13 +1,22 @@
 {
   "name": "subarna-resume",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch src/scss:dist/css"
+     
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Subarna1911/Subarna-Resume.git"
   },
   "keywords": [],
-  "author": "Subarna Blone",
+  "author": "",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/Subarna1911/Subarna-Resume/issues"
+  },
+  "homepage": "https://github.com/Subarna1911/Subarna-Resume#readme"
 }
